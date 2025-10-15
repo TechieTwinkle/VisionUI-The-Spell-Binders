@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  .price-gap {
+    display: flex;
+    gap: 10rem;
+    flex-direction: row;
+  }
+
+  .first-card-grp {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .why-choose-us {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .first-flex {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    margin-left: 3.3rem;
+    /* margin-right: 7rem; */
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 1rem;
+  opacity: 0.7;
+}
+
+
+.category-tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.category-tabs {
+  background-color: #cac9c9;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 18px;
+}
+
+.category-tab {
+  padding: 0.6rem 1.5rem;
+  background-color: transparent;
+  color: #616161;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.active-tab {
+  background-color: white;
+  color: #333;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  border-radius: 18px;
+}
+
+
+
+</style>
+<body>
+<div class="category-tabs-container">
+  <div class="category-tabs d-flex justify-content-center gap-4 my-4">
+    <div class="category-tab active-tab" data-index="0">Chair</div>
+    <div class="category-tab" data-index="1">Beds</div>
+    <div class="category-tab" data-index="2">Sofa</div>
+    <div class="category-tab" data-index="3">Lamp</div>
+  </div>
+</div>
+
+<div id="cardCarousel" class="carousel slide">
+  <div class="carousel-inner">
+
+    <!-- First group -->
+    <div class="carousel-item active">
+      <div class="first-flex">
+        <div class="first-card-grp">
+
+          <div class="card" style="width: 18rem;">
+            <img src="36[1].jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p style="color: #616161;">Chair</p>
+              <h5 class="card-title">Sarkarias Armchair</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$392</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="32[1].jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p style="color: #616161;">Chair</p>
+              <h5 class="card-title">Baltsar Chair</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$299</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="33[1].jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p style="color: #616161;">Chair</p>
+              <h5 class="card-title">Anjay Chair</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$519</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="35[1].jpg" class="card-img-top" alt="..." height="287px">
+            <div class="card-body">
+              <p style="color: #616161;">Chair</p>
+              <h5 class="card-title">Nyantuy Chair</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$921</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="carousel-item">
+      <div class="first-flex">
+        <div class="first-card-grp">
+
+           <div class="card" style="width: 18rem;">
+            <img src="bed1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p style="color: #616161;">Bed</p>
+              <h5 class="card-title">Trundle Bed</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$392</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="bed2.jpeg" class="card-img-top" alt="..." style="height: 290px;">
+            <div class="card-body">
+              <p style="color: #616161;">Bed</p>
+              <h5 class="card-title">Feather Bed</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$299</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="bed3.jpeg" class="card-img-top" alt="..." style="height: 290px;">
+            <div class="card-body">
+              <p style="color: #616161;">Bed</p>
+              <h5 class="card-title">Sleigh Bed</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$519</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="bed4.jpeg" class="card-img-top" alt="..." height="287px">
+            <div class="card-body">
+              <p style="color: #616161;">Bed</p>
+              <h5 class="card-title">Murphy Bed</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$921</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="first-flex">
+        <div class="first-card-grp">
+           <div class="card" style="width: 18rem;">
+            <img src="sofa1.jpeg.jpg" class="card-img-top" alt="..." style="height: 290px;">
+            <div class="card-body">
+              <p style="color: #616161;">Sofa</p>
+              <h5 class="card-title">Chaise Lounge</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$392</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="sofa2.jpeg.jpg" class="card-img-top" alt="..." style="height: 290px;">
+            <div class="card-body">
+              <p style="color: #616161;">Sofa</p>
+              <h5 class="card-title">Cabriole</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$299</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="sofa3.jpeg.jpg" class="card-img-top" alt="..." style="height: 290px;">
+            <div class="card-body">
+              <p style="color: #616161;">Sofa</p>
+              <h5 class="card-title">English Rolled-Arm</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$519</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="sofa4.jpeg" class="card-img-top" alt="..." height="290px">
+            <div class="card-body">
+              <p style="color: #616161;">Sofa</p>
+              <h5 class="card-title">Mid-century Modern</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$921</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="first-flex">
+        <div class="first-card-grp">
+           <div class="card" style="width: 18rem;">
+            <img src="lamp1.jpeg.jpg" class="card-img-top" alt="..." style="height: 290px;">
+            <div class="card-body">
+              <p style="color: #616161;">Lamp</p>
+              <h5 class="card-title">Bouillotte</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$392</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="lamp2.jpeg.jpg" class="card-img-top" alt="..." style="height: 290px;">
+            <div class="card-body">
+              <p style="color: #616161;">Lamp</p>
+              <h5 class="card-title">Tapered Drum</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$299</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="lamp3.jpeg.jpg" class="card-img-top" alt="..." style="height: 290px;">
+            <div class="card-body">
+              <p style="color: #616161;">Lamp</p>
+              <h5 class="card-title">Bell Lamp</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$519</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="lamp4.jpeg.jpg" class="card-img-top" alt="..." height="287px">
+            <div class="card-body">
+              <p style="color: #616161;">Lamp</p>
+              <h5 class="card-title">Coolie Lamp</h5>
+              <img src="stars.png" width="60px" height="60px">
+              <br>
+              <div class="price-gap">
+                <p style="font-weight: bold;">$921</p>
+                <img src="plus.png" width="30px" height="30px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<script>
+  const carousel = document.getElementById('cardCarousel');
+  const tabs = document.querySelectorAll('.category-tab');
+
+  carousel.addEventListener('slid.bs.carousel', function (e) {
+    const activeIndex = e.to;
+    tabs.forEach(tab => tab.classList.remove('active-tab'));
+    if (tabs[activeIndex]) {
+      tabs[activeIndex].classList.add('active-tab');
+    }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
